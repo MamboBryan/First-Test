@@ -12,18 +12,56 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Score"
-        android:textSize="24sp"
-        android:textColor="@color/colorPrimary"/>
+        android:textSize="48sp"
+        android:textColor="@color/colorPrimaryDark"/>
 
-    <TextView
-        android:id="@+id/score_number"
+    <LinearLayout
         android:layout_centerHorizontal="true"
+        android:id="@+id/score_number"
         android:layout_below="@id/textview_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="96"
-        android:textSize="48sp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/team_a_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bambi"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/team_a_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textSize="48sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/team_b_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"
+            android:textSize="48sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/team_b_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mambo"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_centerHorizontal="true"
@@ -33,10 +71,11 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_gravity="center"
             android:id="@+id/winner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The winner is "
+            android:text="WINNER : "
             android:textSize="24sp"
             android:textColor="@color/colorPrimary"/>
 
