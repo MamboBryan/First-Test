@@ -7,11 +7,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textview_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Hello World"
-        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Score"
+        android:textSize="24sp"
         android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textview_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="96"
+        android:textSize="48sp"
+        android:textColor="@color/colorPrimaryDark"/>
 
 </RelativeLayout>
